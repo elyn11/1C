@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Travel Booking Form</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <body>
+    <h1>Travel Booking Form</h1>
+
+    <form id="bookingForm">
+      <fieldset>
+        <legend>Destination Details</legend>
+        <label>City:</label>
+        <input id="city" />
+        <label>Travel Dates:</label>
+        <input id="travelDates" name="travelDates" />
+      </fieldset>
+
+      <fieldset>
+        <legend>Accommodation Preferences</legend>
+        <label>Hotel Type:</label>
+        <select id="hotelType">
+          <option value="budget">Budget Hotel</option>
+          <option value="midrange">Mid-range Hotel</option>
+          <option value="luxury">Luxury Hotel</option>
+        </select>
+        <label>Amenities (choose all that apply):</label>
+        <br />
+        <label>
+          <input id="pool" value="pool" />
+          Swimming Pool
+        </label>
+        <label>
+          <input id="gym" value="gym" />
+          Fitness Center
+        </label>
+        <label>
+          <input id="spa" value="spa" />
+          Spa Services
+        </label>
+        <label>
+          <input id="wifi" value="wifi" />
+          Free Wi-Fi
+        </label>
+      </fieldset>
+
+      <fieldset>
+        <legend>Additional Preferences</legend>
+        <label>Travel Activities (choose one option):</label>
+        <br />
+        <label>
+          <input id="sightseeing" value="sightseeing" />
+          Sightseeing Tours
+        </label>
+        <label>
+          <input id="hiking" value="hiking" />
+          Hiking and Adventure
+        </label>
+        <label>
+          <input id="beaches" value="beaches" />
+          Relaxing on Beaches
+        </label>
+        <label>
+          <input id="shopping" value="shopping" />
+          Shopping and Dining
+        </label>
+      </fieldset>
+
+      <button type="submit">Find My Perfect Trip!</button>
+    </form>
+  </body>
+</html>
