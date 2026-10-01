@@ -22,7 +22,7 @@
       <fieldset>
         <legend>Accommodation Preferences</legend>
         <label>Hotel Type:</label>
-        <select id="hotelType">
+        <select id="hotelType" required>
           <option value="budget">Budget Hotel</option>
           <option value="midrange">Mid-range Hotel</option>
           <option value="luxury">Luxury Hotel</option>
@@ -30,19 +30,19 @@
         <label>Amenities (choose all that apply):</label>
         <br />
         <label for="pool">
-          <input type="radio" id="pool" name="amenities[]" value="pool" />
+          <input type="checkbox" id="pool" name="amenities[]" value="pool" />
           Swimming Pool
         </label>
         <label>
-          <input type="radio" id="gym" name="amenities[]" value="gym" />
+          <input type="checkbox" id="gym" name="amenities[]" value="gym" />
           Fitness Center
         </label>
         <label>
-          <input type="radio" id="spa" name="amenities[]" value="spa" />
+          <input type="checkbox" id="spa" name="amenities[]" value="spa" />
           Spa Services
         </label>
         <label>
-          <input type="radio" id="wifi" name="amenities[]" value="wifi" />
+          <input type="checkbox" id="wifi" name="amenities[]" value="wifi" />
           Free Wi-Fi
         </label>
       </fieldset>
@@ -52,19 +52,19 @@
         <label>Travel Activities (choose one option):</label>
         <br />
         <label>
-          <input id="sightseeing" value="sightseeing" />
+          <input type="checkbox" id="sightseeing" name="activities" value="sightseeing" />
           Sightseeing Tours
         </label>
         <label>
-          <input id="hiking" value="hiking" />
+          <input type="checkbox" id="hiking" name="activities" value="hiking" />
           Hiking and Adventure
         </label>
         <label>
-          <input id="beaches" value="beaches" />
+          <input type="checkbox" id="beaches" name="activities" value="beaches" />
           Relaxing on Beaches
         </label>
         <label>
-          <input id="shopping" value="shopping" />
+          <input type="checkbox" id="shopping" name="activities" value="shopping" />
           Shopping and Dining
         </label>
       </fieldset>
